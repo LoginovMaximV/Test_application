@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'flatpages/default.html' %}
+<html>
+<head>
+<title>{{ flatpage.title }}</title>
+</head>
+<body>
+    {% block content %}
+    <p><strong>{{ flatpage.content }}</strong></p>
+    <ul>
+        <li><span style="color: #ccffff;">{{ flatpage.content }}<img src="https://html5-editor.net/tinymce/plugins/emoticons/img/smiley-cool.gif" alt="cool" /></span></li>
+        <li><em>{{ flatpage.content }}</em></li>
+        <li><span style="color: #0000ff;">{{ flatpage.content }}<img src="https://html5-editor.net/tinymce/plugins/emoticons/img/smiley-kiss.gif" alt="kiss" /></span></li>
+        <li><span style="text-decoration: underline;">{{ flatpage.content }}</span></li>
+        <li><span style="color: #ff0000;">{{ flatpage.content }}<img src="https://html5-editor.net/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" alt="tongue-out" /></span></li>
+    </ul>
+    {% endblock content %}
+</body>
+</html>
